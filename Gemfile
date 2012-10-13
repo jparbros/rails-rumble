@@ -31,6 +31,7 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'compass_twitter_bootstrap'
 gem 'devise'
+gem 'tinymce-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -1,0 +1,11 @@
+%fieldset
+  .control-group
+    = form.label :name, class: "control-label"
+    %div.controls
+      = form.text_field :name
+  .control-group
+    = form.label :description, class: "control-label"
+    %div.controls
+      = form.text_area :description, class: "tinymce"
+= tinymce :theme => "simple"
+

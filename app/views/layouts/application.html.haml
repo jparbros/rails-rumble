@@ -7,7 +7,7 @@
   %meta{:content => "Walking Pixels | www.walkingpixels.com", :name => "author"}/
   %meta{:content => "index, follow", :name => "robots"}/
   %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-
+  = tinymce_assets
 %body
   .container
     %section.navigation-block
@@ -44,3 +44,5 @@
 
     %section.content-block{:role => "main"}
       = yield
+
+<script type="text/javascript" src="/assets/tinymce.js">
