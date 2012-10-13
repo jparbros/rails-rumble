@@ -11,9 +11,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121012234759) do
+ActiveRecord::Schema.define(:version => 20121013000242) do
 
-  create_table "campaings", :force => true do |t|
+  create_table "campaigns", :force => true do |t|
     t.string   "name"
     t.text     "description"
     t.integer  "Organization_id"
