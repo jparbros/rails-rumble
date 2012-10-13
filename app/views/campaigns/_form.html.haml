@@ -6,6 +6,9 @@
   .control-group
     = form.label :description, class: "control-label"
     %div.controls
-      = form.text_area :description, class: "tinymce"
+      = form.text_area :description, class: "control-label tinymce"
+  .form-actions
+    = form.submit "create campaign", class: "btn btn-primary"
+
 = tinymce :theme => "simple"
 

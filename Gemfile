@@ -9,10 +9,11 @@ group :development do
   gem 'mysql2'
 end
 
-group :test do
+group :test, :development do
   gem 'rspec-rails'
   gem 'machinist'
   gem 'shoulda'
+  gem 'faker'
 end
 
 # Gems used only for assets and not required
