@@ -1,0 +1,42 @@
+!!!
+%head
+  %meta{:charset => "utf-8"}/
+  %title Form elements | Chromatron HTML5 Admin Backend
+  = stylesheet_link_tag 'application\'
+  %meta{:content => "", :name => "description"}/
+  %meta{:content => "Walking Pixels | www.walkingpixels.com", :name => "author"}/
+  %meta{:content => "index, follow", :name => "robots"}/
+  %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+
+%body
+  .container
+    %section.navigation-block
+
+      %header
+
+        %h1
+          %a.brand{:href => "login.html", :title => "Back to Homepage"} Chromatron Responsive Admin Backend built with Twitter Bootstrap
+
+        %p A cathode ray tube awesomeness
+
+      %section.user-profile
+        %figure
+          %img{:alt => "John Pixel avatar", :src => "http://placekitten.com/50/50"}
+            %figcaption
+              %strong
+                %a{:href => "forms.html#"} John Pixel
+              %em Administrator
+              %ul
+                %li
+                  %a.btn.btn-primary.btn-flat{:href => "forms.html#", :title => "View www.example.com"} view website
+                %li
+                  %a.btn.btn-primary.btn-flat{:href => "forms.html#", :title => "Securely logout from application"} logout
+      %nav.main-navigation{:role => "navigation"}
+        %ul
+          %li
+            %a.no-submenu{:href => "index.html"}
+              %span.fam-house>
+              Dashboard
+
+    %section.content-block{:role => "main"}
+      = yield
