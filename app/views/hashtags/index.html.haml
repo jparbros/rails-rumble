@@ -1,0 +1,14 @@
+.span12.data-block
+  .data-container
+    %header
+      %h2
+        Campaigns
+    %section
+      %table.datatable.table-striped.table-bordered.dataTable
+        %thead
+          %tr
+            %th Id
+            %th Hashtag
+            %th Actions
+        %tbody
+          = render @hashtags

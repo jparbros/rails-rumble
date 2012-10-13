@@ -43,6 +43,11 @@
             %a.no-submenu{:href => "#{campaigns_path}"}
               %span.fam-house>
               Campaign
+          - if @campaign and not @campaign.new_record?
+            %li
+              %a.no-submenu{:href => "#{campaign_hashtags_path(@campaign)}"}
+                %span.fam-house>
+                Hashtag
 
     %section.content-block{:role => "main"}
       = yield

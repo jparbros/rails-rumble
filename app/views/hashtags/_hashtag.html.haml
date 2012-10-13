@@ -1,0 +1,6 @@
+%tr
+  %td= hashtag.id
+  %td= hashtag.hashtag
+  %td
+    = link_to "edit", edit_campaign_hashtag_path(@campaign, hashtag), class: "btn btn-primary"
+    = link_to "delete", campaign_hashtag_path(@campaign, hashtag), method: :delete, confirm: "Are you sure?", class: "btn btn-danger"
