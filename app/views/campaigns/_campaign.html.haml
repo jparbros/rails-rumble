@@ -2,5 +2,5 @@
   %td= campaign.id
   %td= campaign.name
   %td
-    = link_to "edit", edit_campaign_path(campaing), class: "btn btn-primary"
-    = link_to "delete", campaign_path(campaign), method: :delete, confirmation: "Are you sure?", class: "btn btn-danger"
+    = link_to "edit", edit_campaign_path(campaign), class: "btn btn-primary"
+    = link_to "delete", campaign_path(campaign), method: :delete, confirm: "Are you sure?", class: "btn btn-danger"

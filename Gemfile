@@ -12,7 +12,6 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'machinist'
-  gem 'shoulda'
   gem 'faker'
 end
 
@@ -48,3 +47,5 @@ gem 'tinymce-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'pg'
