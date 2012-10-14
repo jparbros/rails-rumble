@@ -3,5 +3,11 @@
     = form.label :hashtag, class: "control-label"
     %div.controls
       = form.text_field :hashtag
+      
+  .control-group
+    = form.label :mood, class: "control-label"
+    %div.controls
+      = form.select :mood, ['positive','negative']
+      
   .form-actions
     = form.submit
