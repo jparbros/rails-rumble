@@ -15,6 +15,10 @@ end
 State.blueprint do
   name {'Super Duper State'}
 end
-Incident.blueprint do
-  # Attributes here
+IncidentType.blueprint do
+  name { "new incident" }
+end
+
+Organization.blueprint do
+  name { "New Organization" }
 end

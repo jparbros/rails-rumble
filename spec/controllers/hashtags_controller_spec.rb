@@ -86,5 +86,4 @@ describe HashtagsController do
       response.should be_redirect
     end
   end
-
 end
