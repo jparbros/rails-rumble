@@ -1,0 +1,32 @@
+%h1
+  %a.brand{:href => "login.html#"} Chromatron Responsive Admin Backend built with Twitter Bootstrap
+%section
+  = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |form|
+    %fieldset
+      .control-group
+        = form.label :email, class: 'control-label'
+        .controls
+          = form.text_field :email
+
+      .control-group
+        = form.label :password, class: 'control-label'
+        .controls
+          = form.password_field :password
+
+      - if devise_mapping.rememberable?
+        .control-group
+          .controls
+            %label
+              = form.check_box :remember_me
+              %span Remembe me 
+      .form-actions
+        %button.btn.btn-primary.btn-alt{:type => "submit"}
+          %span.awe-signin
+          Log in
+
+    %nav
+      %ul
+        %li
+          %a{:href => "login.html#"} Lost password?
+        %li
+          %a{:href => "login.html#"} Sign Up

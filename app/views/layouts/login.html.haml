@@ -1,15 +1,11 @@
 !!!
-%head
-  %meta{:charset => "utf-8"}
-    %title Error 401 | Chromatron HTML5 Admin Backend
-    %meta{:content => "", :name => "description"}/
-    %meta{:content => "Walking Pixels | www.walkingpixels.com", :name => "author"}/
-    %meta{:content => "index, follow", :name => "robots"}/
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    / CSS styles
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %title Login | Chromatron HTML5 Admin Backend
     = stylesheet_link_tag 'application'
 
-  %body.error-page
-    / Error page container
-    %section.error-container
+  %body.login-page
+    / Main login container
+    .login-container
       = yield
