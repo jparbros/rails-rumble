@@ -15,6 +15,7 @@ end
 State.blueprint do
   name {'Super Duper State'}
 end
+
 IncidentType.blueprint do
   name { "new incident" }
 end

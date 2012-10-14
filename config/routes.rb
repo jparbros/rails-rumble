@@ -1,7 +1,4 @@
 RailsRumble::Application.routes.draw do
-  
-
-  
 
   devise_for :users, :controllers => { :sessions => "sessions" }
 
@@ -10,6 +7,7 @@ RailsRumble::Application.routes.draw do
     resources :hashtags
     resources :incidents
   end
+
   resources :states
 
   resources :incident_types
