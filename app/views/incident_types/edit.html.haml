@@ -1,0 +1,9 @@
+.row-fluid
+  .span12.data-block
+    .data-container
+      %header
+        %h2
+          Edit Incident Type
+      %section
+        = form_for @incident_type, :html => {class: "form-horizontal"} do |form|
+          = render partial: "form", locals: {form: form}

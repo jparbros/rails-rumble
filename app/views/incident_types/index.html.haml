@@ -1,0 +1,14 @@
+.span12.data-block
+  .data-container
+    %header
+      %h2
+        Incident Type
+    %section
+      %table.datatable.table-striped.table-bordered.dataTable
+        %thead
+          %tr
+            %th Id
+            %th Incident Type
+            %th Actions
+        %tbody
+          = render @incident_types

@@ -9,5 +9,6 @@ RailsRumble::Application.routes.draw do
   end
   resources :states
 
+  resources :incident_types
 
 end
