@@ -9,5 +9,6 @@ class Incident < ActiveRecord::Base
   # Associations
   #
   belongs_to :state
-  
+  belongs_to :campaign
+  has_many :comments, as: :commentable
 end

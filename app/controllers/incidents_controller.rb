@@ -6,6 +6,10 @@ class IncidentsController < ApplicationController
     @incidents = Incident.all
   end
 
+  def show
+    @incident = @campaign.incidents.find(params[:id])
+  end
+
   def update
     @incident = @campaign.incidents.find(params[:id])
     if @incident.update_attributes(params[:incident])

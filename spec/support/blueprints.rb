@@ -29,3 +29,6 @@ end
 Organization.blueprint do
   name { "New Organization" }
 end
+Comment.blueprint do
+  # Attributes here
+end

@@ -1,0 +1,6 @@
+%tr
+  %td= comment.id
+  %td= comment.comment
+  %td
+    = link_to "edit", edit_campaign_incident_comment_path(@campaign, @incident, comment), class: "btn btn-primary"
+    = link_to "delete", campaign_incident_comment_path(@campaign, @incident, comment), method: :delete, confirm: "Are you sure?", class: "btn btn-danger"

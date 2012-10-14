@@ -5,7 +5,6 @@ class CreateIncidents < ActiveRecord::Migration
       t.text :description
       t.references :incident_type
       t.references :state
-
       t.timestamps
     end
   end
