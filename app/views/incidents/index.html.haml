@@ -1,0 +1,15 @@
+.row-fluid
+  .span12.data-block
+    .data-container
+      %header
+        %h2
+          Incidents
+      %section
+        %table.datatable.table.table-striped.table-bordered.dataTable
+          %thead
+            %tr
+              %th Id
+              %th Name
+              %th Actions
+          %tbody
+            = render @incidents
