@@ -12,3 +12,7 @@
  *= require chromatron-blue
  *= require_tree .
  */
+
+nav.main-navigation li.submenu {
+  margin-left: 25px;
+}
