@@ -47,3 +47,5 @@ gem 'tinymce-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'pg'

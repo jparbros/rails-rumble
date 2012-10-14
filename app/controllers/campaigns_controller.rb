@@ -16,6 +16,10 @@ class CampaignsController < ApplicationController
       render :new, error: "Error creating campaign"
     end
   end
+  
+  def show
+    @campaign = Campaign.find(params[:id])
+  end
 
   def update
     @campaign = Campaign.find(params[:id])

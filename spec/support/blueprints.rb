@@ -15,3 +15,6 @@ end
 State.blueprint do
   name {'Super Duper State'}
 end
+Incident.blueprint do
+  # Attributes here
+end
