@@ -14,4 +14,5 @@ RailsRumble::Application.routes.draw do
 
   resources :states
   resources :incident_types
+  resource :organization, controller: "organizations"
 end

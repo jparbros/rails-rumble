@@ -1,0 +1,11 @@
+%fieldset
+  .control-group
+    = form.label :name, class: "control-label"
+    %div.controls
+      = form.text_field :name
+  .control-group
+    = form.label :site, class: "control-label"
+    %div.controls
+      = form.text_field :site
+  .form-actions
+    = form.submit
