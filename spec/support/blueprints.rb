@@ -20,6 +20,12 @@ IncidentType.blueprint do
   name { "new incident" }
 end
 
+Incident.blueprint do
+  title { "Incident name" }
+  description { "Incident description" }
+end
+
+
 Organization.blueprint do
   name { "New Organization" }
 end
