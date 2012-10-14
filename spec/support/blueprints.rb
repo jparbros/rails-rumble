@@ -1,13 +1,5 @@
 require 'machinist/active_record'
 
-# Add your blueprints here.
-#
-# e.g.
-#   Post.blueprint do
-#     title { "Post #{sn}" }
-#     body  { "Lorem ipsum..." }
-#   end
-
 Campaign.blueprint do
   name { "Campaign name" }
   description { "Campaign description" }
@@ -19,6 +11,7 @@ User.blueprint do
   password_confirmation { "123456" }
 end
 
-Hashtag.blueprint do
-  hashtag { "#NewHashtag" }
+
+State.blueprint do
+  name {'Super Duper State'}
 end

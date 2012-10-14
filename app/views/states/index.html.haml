@@ -1,0 +1,14 @@
+.span12.data-block
+  .data-container
+    %header
+      %h2
+        States
+    %section
+      %table.datatable.table-striped.table-bordered.dataTable
+        %thead
+          %tr
+            %th Id
+            %th Name
+            %th Actions
+        %tbody
+          = render @states
