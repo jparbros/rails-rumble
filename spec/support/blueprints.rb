@@ -18,3 +18,7 @@ User.blueprint do
   password { "123456" }
   password_confirmation { "123456" }
 end
+
+Hashtag.blueprint do
+  hashtag { "#NewHashtag" }
+end
