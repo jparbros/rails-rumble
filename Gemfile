@@ -33,6 +33,10 @@ gem 'compass_twitter_bootstrap'
 gem 'devise'
 gem 'tinymce-rails'
 gem 'sentiment_analysis'
+gem 'sidekiq'
+gem 'twitter'
+gem 'typhoeus'
+gem 'carrierwave'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

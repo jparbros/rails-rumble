@@ -32,3 +32,23 @@ end
 Comment.blueprint do
   # Attributes here
 end
+
+Authentication.blueprint do
+  # Attributes here
+end
+
+HistoricalSearch.blueprint do
+  # Attributes here
+end
+
+SocialMessage.blueprint do
+  # Attributes here
+end
+
+Image.blueprint do
+  # Attributes here
+end
+
+ExternalUrl.blueprint do
+  # Attributes here
+end

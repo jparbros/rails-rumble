@@ -1,2 +1,7 @@
 sentiment_analysis:
   api_key: 'FnovQu4sN6qtMqxpOhRC'
+twitter:
+  consumer_key: 'eGhI7F9lBiCVDCTx1dqQ'
+  consumer_secret: 'f8bTBG3O2YX2PjSHWzQ4axNSLsJZdOrvKDKZaReh0'
+  access_token: '19321919-lFvueD7krMfQLAlaDaY7UCTVKU8ln4PfKtwy3w1cP'
+  access_token_secret: 'SSBfkvZkVNhLVrFLwGa6cpREMRXdFDhdARQMHuQA'

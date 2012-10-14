@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121014161458) do
+ActiveRecord::Schema.define(:version => 20121014204506) do
 
   create_table "authentications", :force => true do |t|
     t.string   "provider"
@@ -40,11 +40,34 @@ ActiveRecord::Schema.define(:version => 20121014161458) do
     t.datetime "updated_at",       :null => false
   end
 
+  create_table "external_urls", :force => true do |t|
+    t.string   "url"
+    t.integer  "social_message_id"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
   create_table "hashtags", :force => true do |t|
     t.string   "hashtag"
     t.integer  "campaign_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.string   "mood"
+  end
+
+  create_table "historical_searches", :force => true do |t|
+    t.integer  "hashtag_id"
+    t.text     "terms"
+    t.string   "last_message_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "images", :force => true do |t|
+    t.string   "image"
+    t.integer  "social_message_id"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
   end
 
   create_table "incident_types", :force => true do |t|
@@ -69,6 +92,18 @@ ActiveRecord::Schema.define(:version => 20121014161458) do
     t.string   "site"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "social_messages", :force => true do |t|
+    t.string   "provider"
+    t.string   "social_id"
+    t.text     "content"
+    t.integer  "incident_id"
+    t.integer  "historical_search_id"
+    t.string   "media_url"
+    t.string   "external_url"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
   end
 
   create_table "states", :force => true do |t|

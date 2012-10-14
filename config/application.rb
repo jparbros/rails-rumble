@@ -23,6 +23,7 @@ module RailsRumble
 
     # Custom directories with classes and modules you want to be autoloadable.
     config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += %W(#{config.root}/lib/extractors)
     config.autoload_paths += %W(#{config.root}/lib/**/*.rb)
 
     # Only load the plugins named here, in the order given (default is alphabetical).
