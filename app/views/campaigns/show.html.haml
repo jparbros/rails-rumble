@@ -1,0 +1,46 @@
+.row-fluid
+  .span12.data-block
+    .data-container
+      %header
+        %h2
+          = @campaign.name
+          Campaign
+        = link_to 'Edit', edit_campaign_path(@campaign), class: 'btn btn-primary btn-alt edit-campaign'
+      
+      .row-fluid
+        %article.span6.data-block
+          .data-container
+            %header
+              %h2 
+                %span.awe-signal
+                Hashtags
+              %ul.data-header-actions
+                %li= link_to 'New Hashtag', new_campaign_hashtag_path(@campaign), class: "btn btn-primary btn-alt"
+            %section
+              %ul.stats
+                - @campaign.hashtags.each_with_index do |hashtag, index|
+                  %li
+                    %strong.stats-count= (index+1)
+                    %p= hashtag.hashtag
+                    = link_to 'Edit', edit_campaign_hashtag_path(@campaign, hashtag), class: "btn btn-alt btn-primary stats-view"
+            
+        %article.span6.data-block
+          .data-container
+            %header
+              %h2 
+                %span.awe-edit
+                  Incidents
+            %section
+              %table.table
+                %tbody
+                  - @campaign.incidents.each do |incident|
+                    %tr
+                      %td
+                        = check_box_tag :done
+                      %td
+                        %p
+                          = incident.description
+                        %span
+                          Reported at
+                          %time
+                            = incident.created_at
