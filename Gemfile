@@ -32,6 +32,7 @@ gem 'haml-rails'
 gem 'compass_twitter_bootstrap'
 gem 'devise'
 gem 'tinymce-rails'
+gem 'sentiment_analysis'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -47,3 +48,5 @@ gem 'tinymce-rails'
 
 # To use debugger
 # gem 'debugger'
+
+#gem 'pg'
